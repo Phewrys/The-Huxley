@@ -1,0 +1,20 @@
+import java.io.*;
+import java.util.*;
+
+public class HuxleyCode {
+  public static void main(String args[]) {
+    Scanner input = new Scanner(System.in);
+
+    int A, B, C, D, AB, CD;
+
+    A = input.nextInt();
+    B = input.nextInt();
+    C = input.nextInt();
+    D = input.nextInt();
+
+    AB = A*B;
+    CD = C*D;
+
+    System.out.printf("DIFERENCA = %d", AB-CD);
+  }
+}
