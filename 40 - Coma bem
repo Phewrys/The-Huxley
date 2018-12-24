@@ -1,0 +1,15 @@
+import java.io.*;
+import java.util.*;
+
+public class HuxleyCode {
+  public static void main(String args[]) {
+    Scanner input = new Scanner(System.in);
+ 
+    double gasto, dez;
+    gasto = input.nextDouble();
+
+    dez = (gasto/100)*10;
+
+    System.out.printf("%.2f", gasto+dez);
+  }
+}
