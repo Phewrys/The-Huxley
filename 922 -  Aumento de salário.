@@ -1,0 +1,27 @@
+import java.io.*;
+import java.util.*;
+
+public class HuxleyCode {
+  public static void main(String args[]) {
+    Scanner input = new Scanner(System.in);
+ 
+    double salario = input.nextDouble();
+
+    if (salario <= 280.00){
+        salario += ((salario/100)*20);
+        System.out.printf("%.2f", salario);
+    }
+    else if (salario > 280.00 && salario <= 700.00){
+        salario += ((salario/100)*15);
+        System.out.printf("%.2f", salario);
+    }
+    else if (salario > 700.00 && salario <= 1500.00){
+        salario += ((salario/100)*10);
+        System.out.printf("%.2f", salario);
+    }
+    else {
+        salario += ((salario/100)*5);
+        System.out.printf("%.2f", salario);
+    }
+  }
+}
