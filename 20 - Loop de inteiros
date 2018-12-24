@@ -1,0 +1,11 @@
+import java.io.*;
+import java.util.*;
+
+public class HuxleyCode {
+  public static void main(String args[]) {
+    Scanner input = new Scanner(System.in);
+
+    for (int x = 1; x <= 1000; ++x)
+      System.out.printf("%d%n", x);
+  }
+}
