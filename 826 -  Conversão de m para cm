@@ -1,0 +1,18 @@
+import java.io.*;
+import java.util.*;
+
+public class HuxleyCode {
+  public static void main(String args[]) {
+    Scanner input = new Scanner(System.in);
+
+    int metro;
+    double cm;
+
+    System.out.print("Insira um valor em metros:");
+    metro = input.nextInt();
+
+    cm = metro*100;
+  
+    System.out.printf("\nResultado: %.1f", cm);
+  }
+}
