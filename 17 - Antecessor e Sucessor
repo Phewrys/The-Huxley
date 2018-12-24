@@ -1,0 +1,15 @@
+import java.io.*;
+import java.util.*;
+
+public class HuxleyCode {
+  public static void main(String args[]) {
+    
+    Scanner input = new Scanner(System.in);
+    
+    int num = input.nextInt();
+    int ant = num-1;
+    int suc = num+1;
+    
+    System.out.printf("%d %d%n", ant, suc);
+  }
+}
