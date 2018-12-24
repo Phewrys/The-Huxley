@@ -1,0 +1,24 @@
+import java.io.*;
+import java.util.*;
+
+public class HuxleyCode {
+  public static void main(String args[]) {
+    Scanner input = new Scanner(System.in);
+    double media, fre;
+    int aulas, faltas, pres;
+  
+    media = input.nextDouble();
+    aulas = input.nextInt();
+    faltas = input.nextInt();
+
+    pres = aulas-faltas;
+    fre = (pres*100)/aulas;
+
+    if (fre >= 75 && media >= 5)
+        System.out.println("APROVADO");
+    else if (fre >= 50 && media >= 7)
+        System.out.println("APROVADO");
+    else
+        System.out.println("REPROVADO");
+  }
+}
