@@ -1,0 +1,11 @@
+import java.io.*;
+import java.util.*;
+
+public class HuxleyCode {
+  public static void main(String args[]) {
+    int x;
+    for (x = 0; x <= 99; x++){
+        System.out.printf("%d%n", x);
+    }
+  }
+}
