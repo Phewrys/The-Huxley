@@ -1,0 +1,17 @@
+import java.io.*;
+import java.util.*;
+
+public class HuxleyCode {
+  public static void main(String args[]) {
+    Scanner input = new Scanner(System.in);
+ 
+    int areaRetang, lado1, lado2;
+
+    lado1 = input.nextInt();
+    lado2 = input.nextInt();
+
+    areaRetang = lado1*lado2;
+
+    System.out.printf("%d", areaRetang);
+  }
+}
