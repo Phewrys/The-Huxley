@@ -1,0 +1,20 @@
+import java.io.*;
+import java.util.*;
+
+public class HuxleyCode {
+  public static void main(String args[]) {
+    Scanner input = new Scanner(System.in);
+
+    int x, y, z;
+    x = input.nextInt();
+    y = input.nextInt();
+    z = input.nextInt();
+
+    if (x <= y && x <= z)
+      System.out.printf("%d", x);
+    else if (y <= x && y <= z)
+      System.out.printf("%d", y);
+    else
+      System.out.printf("%d", z);
+  }
+}
