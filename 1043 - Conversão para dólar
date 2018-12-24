@@ -1,0 +1,14 @@
+import java.io.*;
+import java.util.*;
+
+public class HuxleyCode {
+  public static void main(String args[]) {
+    Scanner input = new Scanner(System.in);
+
+    double dolar, real;
+    dolar = input.nextDouble();
+    real = dolar*3.55;
+  
+    System.out.printf("%.2f", real); 
+  }
+}
