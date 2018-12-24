@@ -1,0 +1,15 @@
+import java.io.*;
+import java.util.*;
+
+public class HuxleyCode {
+  public static void main(String args[]) {
+    Scanner input = new Scanner(System.in);
+
+    int N = input.nextInt();
+
+    if (N % 2 == 0)
+      System.out.printf("O numero eh %d e ele eh par", N);
+    if (N % 2 != 0)
+      System.out.printf("O numero eh %d e ele eh impar", N);
+  }
+}
