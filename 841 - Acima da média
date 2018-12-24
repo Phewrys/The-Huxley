@@ -1,0 +1,22 @@
+import java.io.*;
+import java.util.*;
+
+public class HuxleyCode {
+  public static void main(String args[]) {
+    Scanner input = new Scanner(System.in);
+    double num1, num2, num3, media;
+    int count = 0;
+    
+    num1 = input.nextDouble();
+    num2 = input.nextDouble();
+    num3 = input.nextDouble();
+    
+    media = (num1+num2+num3)/3;
+    
+    if (num1 > media) count++;
+    if (num2 > media) count++;
+    if (num3 > media) count++;
+    
+    System.out.printf("%d%n", count);
+  }
+}
