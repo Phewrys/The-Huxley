@@ -1,0 +1,21 @@
+import java.io.*;
+import java.util.*;
+
+public class HuxleyCode {
+  public static void main(String args[]) {
+    Scanner input = new Scanner(System.in);
+
+    double pi = 3.14159;
+    double A = input.nextDouble();
+    double B = input.nextDouble();
+    double C = input.nextDouble();
+
+    double areaTriRetang = (A*C)/2;
+    double areaCir = pi*(C*C);
+    double areaTrap = ((A+B)*C)/2;
+    double areaQuad = B*B;
+    double areaRetang = A*B;
+
+    System.out.printf("TRIANGULO: %.3f%nCIRCULO: %.3f%nTRAPEZIO: %.3f%nQUADRADO: %.3f%nRETANGULO: %.3f%n", areaTriRetang, areaCir, areaTrap, areaQuad, areaRetang);
+  }
+}
