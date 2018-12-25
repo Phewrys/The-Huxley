@@ -1,0 +1,34 @@
+import java.io.*;
+import java.util.*;
+
+public class HuxleyCode {
+  public static void main(String args[]) {
+    Scanner input = new Scanner(System.in);
+    
+    double a = input.nextDouble();
+    double aa = input.nextDouble();
+    double b = input.nextDouble();
+    double bb = input.nextDouble();
+    double c = input.nextDouble();
+    double cc = input.nextDouble();
+    double d = input.nextDouble();
+    double dd = input.nextDouble();
+    double e = input.nextDouble();
+    double ee = input.nextDouble();
+
+    int count = 0;
+
+    if((a/100*80) >= aa)
+      count++;
+    if((b/100*80) >= bb)
+      count++;
+    if((c/100*80) >= cc)
+      count++;
+    if((d/100*80) >= dd)
+      count++;
+    if((e/100*80) >= ee)
+      count++;
+
+  System.out.printf("%d%n", count);
+  }
+}
