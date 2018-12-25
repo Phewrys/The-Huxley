@@ -1,0 +1,44 @@
+import java.io.*;
+import java.util.*;
+
+public class HuxleyCode {
+  public static void main(String args[]) {
+    Scanner ord = new Scanner(System.in);
+
+    String x = ord.next();
+    String y = ord.next();
+    String z = ord.next();
+
+    String xx = ord.next();
+    String yy = ord.next();
+    String zz = ord.next();
+
+    String vetor[] = new String[3];
+    vetor[0] = x;
+    vetor[1] = y;
+    vetor[2] = z;
+
+    String vetor2[] = new String[3];
+    vetor2[0] = xx;
+    vetor2[1] = yy;
+    vetor2[2] = zz;
+
+    Arrays.sort(vetor);
+    for (int i = 0; i<vetor.length;i++)
+    {
+      System.out.print(vetor[i]);
+      if(i != 2)
+        System.out.print(" ");
+    }
+
+    System.out.println();
+
+    Arrays.sort(vetor2);
+    for (int i = 0; i<vetor2.length;i++)
+    {
+      System.out.print(vetor2[i]);
+      if(i != 2)
+        System.out.print(" ");
+    }
+  }
+}
