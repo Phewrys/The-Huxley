@@ -1,0 +1,18 @@
+import java.io.*;
+import java.util.*;
+
+public class HuxleyCode {
+  public static void main(String args[]) {
+    Scanner input = new Scanner(System.in);
+
+    System.out.print("Digite um numero inteiro:");
+    int fat = input.nextInt();
+    int count = 1;
+
+    for ( ;fat >= 1; --fat){
+      count *= fat;
+    }
+
+    System.out.printf("%nFatorial: %d%n", count);
+  }
+}
