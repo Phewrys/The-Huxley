@@ -1,0 +1,22 @@
+import java.io.*;
+import java.util.*;
+
+public class HuxleyCode {
+  public static void main(String args[]) {
+    Scanner input = new Scanner(System.in);
+
+    int vetor[] = new int[10];
+
+    for(int count = 0; count < 10; count++){
+      vetor[count] = input.nextInt();
+    }
+    
+    int x = input.nextInt();
+    int total = 0;
+    for(int i = 0; i < 10; i++){
+     if(x == vetor[i])
+      total++;
+    }
+    System.out.printf("%d\n", total);
+  }
+}
