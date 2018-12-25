@@ -1,0 +1,41 @@
+import java.io.*;
+import java.util.*;
+
+public class HuxleyCode {
+  public static void main(String args[]) {
+    Scanner input = new Scanner(System.in);
+
+    System.out.print("Telefonou para a vitima?\n");
+    boolean a = input.nextBoolean();
+    System.out.print("Esteve no local do crime?\n");
+    boolean b = input.nextBoolean();
+    System.out.print("Mora perto da vitima?\n");
+    boolean c = input.nextBoolean();
+    System.out.print("Devia para a vitima?\n");
+    boolean d = input.nextBoolean();
+    System.out.print("Ja trabalhou com a vitima?\n");
+    boolean e = input.nextBoolean();
+
+    int total = 0;
+
+    if (a == true)
+      total++;
+    if (b == true)
+      total++;
+    if (c == true)
+      total++;
+    if (d == true)
+      total++;
+    if (e == true)
+      total++; 
+
+    if (total == 2)
+      System.out.println("Suspeita");
+    else if (total == 3 || total == 4) 
+      System.out.println("Cumplice");
+    else if (total == 5)
+      System.out.println("Assassino");
+    else
+      System.out.println("Inocente");
+  }
+}
