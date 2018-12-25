@@ -1,0 +1,21 @@
+import java.io.*;
+import java.util.*;
+
+public class HuxleyCode {
+  public static void main(String args[]) {
+    Scanner input = new Scanner(System.in);
+    
+    double x = input.nextDouble();
+    double y = input.nextDouble();
+    String operacao = input.next();
+
+    if (operacao.equals("soma"))
+      System.out.printf("resultado = %.2f%n", x+y);
+    if (operacao.equals("multiplicacao"))
+      System.out.printf("resultado = %.2f%n", x*y);
+    if (operacao.equals("divisao"))
+      System.out.printf("resultado = %.2f%n", x/y);
+    if (operacao.equals("subtracao"))
+      System.out.printf("resultado = %.2f%n", x-y);
+  }
+}
