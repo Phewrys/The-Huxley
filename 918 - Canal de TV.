@@ -1,0 +1,24 @@
+import java.io.*;
+import java.util.*;
+
+public class HuxleyCode {
+  public static void main(String args[]) {
+    Scanner input = new Scanner(System.in);
+    
+    System.out.print("Digite um numero de um canal de tv:");
+    int canal = input.nextInt();
+
+    if(canal == 2)
+      System.out.println("\nSBT");
+    else if(canal == 4)
+      System.out.println("\nBAND");
+    else if(canal == 6)
+      System.out.println("\nREDETV!");
+    else if(canal == 9)
+      System.out.println("\nRECORD");
+    else if(canal == 13)
+      System.out.println("\nGLOBO");
+    else
+      System.out.println("\nCanal Invalido");
+  }
+}
