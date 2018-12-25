@@ -1,0 +1,26 @@
+import java.io.*;
+import java.util.*;
+
+public class HuxleyCode {
+  public static void main(String args[]) {
+    Scanner input = new Scanner(System.in);
+
+    int x = 1;
+    while (x != 0){
+      int h1 = input.nextInt();
+      int m1 = input.nextInt();
+      int h2 = input.nextInt();
+      int m2 = input.nextInt();
+
+      int resultado = ((h2*60) + m2) - ((h1*60) + m1);
+      if (resultado < 0)
+        System.out.printf("%d%n", 1440+resultado);
+      else if (resultado == 0)
+        System.out.println();
+      else
+        System.out.printf("%d%n", resultado);
+
+      x = (h1+m1+h2+m2);      
+    }
+  }
+}
