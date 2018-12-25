@@ -1,0 +1,14 @@
+import java.io.*;
+import java.util.*;
+
+public class HuxleyCode {
+  public static void main(String args[]) {
+    Scanner input = new Scanner(System.in);
+
+    String palavra1 = input.nextLine();
+    String palavra2 = input.nextLine();
+
+    String concatenar = palavra1.concat(palavra2);
+    System.out.printf("%s%n", concatenar);
+  }
+}
