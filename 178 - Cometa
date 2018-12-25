@@ -1,0 +1,15 @@
+import java.io.*;
+import java.util.*;
+
+public class HuxleyCode {
+  public static void main(String args[]) {
+    Scanner input = new Scanner(System.in);
+    
+    int num = input.nextInt();
+    int x = 1986;
+    while (x < num){
+      x += 76;
+    }
+    System.out.printf("%d", x);
+  }
+}
