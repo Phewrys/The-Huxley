@@ -1,0 +1,21 @@
+import java.io.*;
+import java.util.*;
+
+public class HuxleyCode {
+  public static void main(String args[]) {
+    Scanner input = new Scanner(System.in);
+
+    int x = 0,i=1,valor=1;
+
+    while(x != (-1)){
+      x = input.nextInt();
+      if(x != (-1)){
+        for(i = 1;i <= x;i++){
+          valor *= i;
+        }
+        System.out.printf("%d\n", valor);
+        valor = 1;
+      }
+    }
+  }
+}
