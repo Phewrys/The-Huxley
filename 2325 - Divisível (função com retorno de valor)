@@ -1,0 +1,25 @@
+import java.io.*;
+import java.util.*;
+
+public class HuxleyCode {
+  public static void main(String args[]) {
+    Scanner input = new Scanner(System.in);
+
+    int x = input.nextInt();
+    int y = input.nextInt();
+
+    boolean resultado = bool(x, y);
+
+    if(resultado == true)
+      System.out.println("divisivel");
+    else
+      System.out.println("nao divisivel");
+
+  }
+  public static boolean bool(int x, int y){
+    if(x >= y)
+      return true;
+    else
+      return false;
+  }
+}
