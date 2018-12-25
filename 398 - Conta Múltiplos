@@ -1,0 +1,19 @@
+import java.io.*;
+import java.util.*;
+
+public class HuxleyCode {
+  public static void main(String args[]) {
+    Scanner input = new Scanner(System.in);
+
+    int x = input.nextInt();
+    int y = input.nextInt();
+    int total = 0;
+
+    for(int count = 1; count < 50; count++){
+      if(count % x == 0 && count % y == 0)
+        total = total + 1;
+    }
+
+    System.out.printf("%d", total);
+  }
+}
