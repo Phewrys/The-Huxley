@@ -1,0 +1,15 @@
+import java.io.*;
+import java.util.*;
+
+public class HuxleyCode {
+  public static void main(String args[]) {
+    Scanner input = new Scanner(System.in);
+    
+    int d = input.nextInt();
+    int p = input.nextInt();
+    int u = input.nextInt();
+    int n = input.nextInt();
+
+    System.out.printf("%d", d+u+n);
+  }
+}
