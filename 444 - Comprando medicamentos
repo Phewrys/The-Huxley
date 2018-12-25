@@ -1,0 +1,13 @@
+import java.io.*;
+import java.util.*;
+
+public class HuxleyCode {
+  public static void main(String args[]) {
+    Scanner input = new Scanner(System.in);
+    
+    int caixas = input.nextInt();
+    int comprimidos = caixas*35;
+    
+    System.out.printf("%d%n%d", comprimidos/4, comprimidos%4);
+  }
+}
