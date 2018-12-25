@@ -1,0 +1,16 @@
+import java.io.*;
+import java.util.*;
+
+public class HuxleyCode {
+  public static void main(String args[]) {
+    Scanner input = new Scanner(System.in);
+
+    int x = input.nextInt();
+    int y = input.nextInt();
+
+    if(x <= y)
+      System.out.printf("%d %d", x, y);
+    else
+      System.out.printf("%d %d", y, x);
+  }
+}
