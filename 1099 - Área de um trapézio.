@@ -1,0 +1,16 @@
+import java.io.*;
+import java.util.*;
+
+public class HuxleyCode {
+  public static void main(String args[]) {
+    Scanner input = new Scanner(System.in);
+
+    int A = input.nextInt();
+    int B = input.nextInt();
+    int C = input.nextInt();
+
+    double areaTrap = ((A+B)*C);
+    
+    System.out.printf("%.1f", areaTrap/2);
+  }
+}
