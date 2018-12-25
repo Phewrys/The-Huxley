@@ -1,0 +1,21 @@
+import java.io.*;
+import java.util.*;
+
+public class HuxleyCode {
+  public static void main(String args[]) {
+    Scanner input = new Scanner(System.in);
+
+    int x = input.nextInt();
+    int dez = x / 10;
+    int uni = x % 10;
+
+    if(x >= 10 && x <= 99){
+      if(uni != 0)
+        System.out.printf("%d%d%n", uni, dez);
+      else
+        System.out.printf("%d", dez);
+    }
+    else
+      System.out.printf("numero inserido incorreto.\n"); 
+  }
+}
