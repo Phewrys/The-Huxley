@@ -1,0 +1,18 @@
+import java.io.*;
+import java.util.*;
+
+public class HuxleyCode {
+  public static void main(String args[]) {
+    Scanner input = new Scanner(System.in);
+
+    double x = input.nextDouble();
+    double y = input.nextDouble();
+
+    if (x > y)
+      System.out.printf("Primeiro circulo");
+    else if (y > x)
+      System.out.printf("Segundo circulo");
+    else
+      System.out.printf("Iguais");
+  }
+}
