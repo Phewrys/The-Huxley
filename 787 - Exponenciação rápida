@@ -1,0 +1,19 @@
+import java.io.*;
+import java.util.*;
+
+public class HuxleyCode {
+  public static void main(String args[]) {
+    Scanner in = new Scanner(System.in);
+
+    int a = in.nextInt();
+    int n = in.nextInt();
+
+    System.out.println(fastExp(a, n));
+  }
+  public static int fastExp(int x, int y){
+    if (y == 0)
+        return 1;
+    else
+        return x * fastExp(x, y-1);
+  }
+}
