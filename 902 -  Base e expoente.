@@ -1,0 +1,23 @@
+import java.io.*;
+import java.util.*;
+
+public class HuxleyCode {
+  public static void main(String args[]) {
+    Scanner input = new Scanner(System.in);
+
+    System.out.print("Informe a base:");
+    int x = input.nextInt();
+    System.out.print("\nInforme o expoente:");
+    int y = input.nextInt();
+
+    int total = x;
+
+    for(int count = 1; count < y; count++){
+      total = total*x;
+    }
+    if(y == 0)
+      System.out.println("\nResultado: 1");
+    else
+    System.out.printf("%nResultado: %d%n", total);
+  }
+}
