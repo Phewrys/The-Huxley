@@ -1,0 +1,16 @@
+import java.io.*;
+import java.util.*;
+
+public class HuxleyCode {
+  public static void main(String args[]) {
+    Scanner input = new Scanner(System.in);
+
+    int numero = input.nextInt();
+    int horas = input.nextInt();
+    double valor = input.nextDouble();
+
+    double salario = horas*valor;
+
+    System.out.printf("NUMBER = %d%nSALARY = R$ %.2f", numero, salario);
+  }
+}
