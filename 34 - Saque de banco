@@ -1,0 +1,43 @@
+import java.io.*;
+import java.util.*;
+
+public class HuxleyCode {
+  public static void main(String args[]) {
+    Scanner input = new Scanner(System.in);
+
+    int a, b, c, d, e;
+    int quantia = input.nextInt();
+    a=b=c=d=e=0;
+   
+    if(quantia<5){
+        e = quantia;
+        System.out.printf("Notas de 50: %d\nNotas de 20: %d\nNotas de 10: %d\nNotas de 5: %d\nNotas de 1: %d\n", a, b, c, d, e);
+    }
+    else if(quantia<10){
+        d = quantia/5;
+        e = quantia%5;
+        System.out.printf("Notas de 50: %d\nNotas de 20: %d\nNotas de 10: %d\nNotas de 5: %d\nNotas de 1: %d\n", a, b, c, d, e);
+    }
+    else if(quantia<20){
+        c = quantia/10;
+        d = (quantia%10)/5;
+        e = (quantia%10)%5;
+        System.out.printf("Notas de 50: %d\nNotas de 20: %d\nNotas de 10: %d\nNotas de 5: %d\nNotas de 1: %d\n", a, b, c, d, e);
+    }
+    else if(quantia<50){
+        b = quantia/20;
+        c = (quantia%20)/10;
+        d = ((quantia%20)%10)/5;
+        e = ((quantia%20)%10)%5;
+        System.out.printf("Notas de 50: %d\nNotas de 20: %d\nNotas de 10: %d\nNotas de 5: %d\nNotas de 1: %d\n", a, b, c, d, e);
+    }
+    else{
+        a = quantia/50;
+        b = (quantia%50)/20;
+        c = ((quantia%50)%20)/10;
+        d = ((quantia%50)%20)%10/5;
+        e = ((quantia%50)%20)%10%5;
+        System.out.printf("Notas de 50: %d\nNotas de 20: %d\nNotas de 10: %d\nNotas de 5: %d\nNotas de 1: %d\n", a, b, c, d, e);
+    }
+  }
+}
