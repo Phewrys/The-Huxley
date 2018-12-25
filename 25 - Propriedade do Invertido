@@ -1,0 +1,24 @@
+import java.io.*;
+import java.util.*;
+
+public class HuxleyCode {
+  public static void main(String args[]) {
+    Scanner input = new Scanner(System.in);
+
+    int num,num2,i;
+    int x = input.nextInt();
+    int y = input.nextInt();
+
+    if(x >= 10 && y < 100){
+      for(i = x;i <= y;i++){
+        num = i % 10;
+        num2 = i / 10;
+        if(num != 0 && i % num2 == 0){
+          System.out.printf("%d\n", i);
+        }
+      }
+    }
+    else
+      System.out.printf("não pode ser reproduzido.");
+  }
+}
