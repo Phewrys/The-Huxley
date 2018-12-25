@@ -1,0 +1,25 @@
+import java.io.*;
+import java.util.*;
+
+public class HuxleyCode {
+  public static void main(String args[]) {
+    Scanner input = new Scanner(System.in);
+
+    String comida = input.nextLine();
+    String bebida = input.nextLine();
+
+    double lasanha = 8.00;
+    double estrogonofe = 11.00;
+    double refrigerante = 3.00;
+    double suco = 2.50;
+    
+    if(comida.equalsIgnoreCase("lasanha") && bebida.equalsIgnoreCase("refrigerante"))
+      System.out.printf("%.2f%n", lasanha+refrigerante);
+    else if (comida.equalsIgnoreCase("lasanha") && bebida.equalsIgnoreCase("suco"))
+      System.out.printf("%.2f%n", lasanha+suco);
+    else if (comida.equalsIgnoreCase("estrogonofe") && bebida.equalsIgnoreCase("refrigerante"))
+      System.out.printf("%.2f%n", estrogonofe+refrigerante);
+    else if (comida.equalsIgnoreCase("estrogonofe") && bebida.equalsIgnoreCase("suco"))
+      System.out.printf("%.2f%n", estrogonofe+suco);   
+  }
+}
