@@ -1,0 +1,13 @@
+import java.io.*;
+import java.util.*;
+
+public class HuxleyCode {
+  public static void main(String args[]) {
+    Scanner input = new Scanner(System.in);
+
+    int h = input.nextInt();
+    int min = input.nextInt();
+    int x = h * 60 + min;
+    System.out.printf("%d minutos.%n", x);
+  }
+}
