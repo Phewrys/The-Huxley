@@ -1,0 +1,15 @@
+import java.io.*;
+import java.util.*;
+
+public class HuxleyCode {
+  public static void main(String args[]) {
+    Scanner input = new Scanner(System.in);
+
+    double ipva = input.nextDouble();
+    double taxa = input.nextDouble();
+
+    double desconto = (ipva/100)*95;
+
+    System.out.printf("%.2f", desconto+taxa);
+  }
+}
