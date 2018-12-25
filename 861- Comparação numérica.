@@ -1,0 +1,18 @@
+import java.io.*;
+import java.util.*;
+
+public class HuxleyCode {
+  public static void main(String args[]) {
+    Scanner input = new Scanner(System.in);
+
+    System.out.print("Digite um numero:\n");
+    double x = input.nextDouble();
+    System.out.print("Digite outro numero:\n");
+    double y = input.nextDouble();
+
+    if (x > y)
+      System.out.printf("Maior numero: %.1f", x);
+    else
+      System.out.printf("Maior numero: %.1f", y);
+  }
+}
