@@ -1,0 +1,52 @@
+import java.io.*;
+import java.util.*;
+
+public class HuxleyCode {
+  public static void main(String args[]) {
+    Scanner input = new Scanner(System.in);
+
+    int x = 0;
+    System.out.print("Insira a resposta do aluno para a pergunta 1:\n");
+    String um = input.next();
+    System.out.print("Insira a resposta do aluno para a pergunta 2:\n");
+    String dois = input.next();
+    System.out.print("Insira a resposta do aluno para a pergunta 3:\n");
+    String tres = input.next();
+    System.out.print("Insira a resposta do aluno para a pergunta 4:\n");
+    String quatro = input.next();
+    System.out.print("Insira a resposta do aluno para a pergunta 5:\n");
+    String cinco = input.next();
+    System.out.print("Insira a resposta do aluno para a pergunta 6:\n");
+    String seis = input.next();
+    System.out.print("Insira a resposta do aluno para a pergunta 7:\n");
+    String sete = input.next();
+    System.out.print("Insira a resposta do aluno para a pergunta 8:\n");
+    String oito = input.next();
+    System.out.print("Insira a resposta do aluno para a pergunta 9:\n");
+    String nove = input.next();
+    System.out.print("Insira a resposta do aluno para a pergunta 10:\n");
+    String dez = input.next();    
+    if(um.equals("A"))
+      x++;
+    if(dois.equals("B"))
+      x++;
+    if(tres.equals("C"))
+      x++;
+    if(quatro.equals("D"))
+      x++;
+    if(cinco.equals("E"))
+      x++;
+    if(seis.equals("E"))
+      x++;
+    if(sete.equals("D"))
+      x++;
+    if(oito.equals("C"))
+      x++;
+    if(nove.equals("B"))
+      x++;
+    if(dez.equals("A"))
+      x++;
+
+	System.out.printf("Nota do aluno: %d%n", x);
+  }
+}
