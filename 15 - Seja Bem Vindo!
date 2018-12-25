@@ -1,0 +1,10 @@
+import java.io.*;
+import java.util.*;
+
+public class HuxleyCode {
+  public static void main(String args[]) {
+    Scanner input = new Scanner(System.in);
+    String nome = input.nextLine();
+    System.out.printf("Seja muito bem-vindo %s\n", nome);
+  }
+}
