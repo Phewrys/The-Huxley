@@ -1,0 +1,13 @@
+import java.io.*;
+import java.util.*;
+
+public class HuxleyCode {
+  public static void main(String args[]) {
+    Scanner input = new Scanner(System.in);
+    String palavra = input.nextLine();
+
+    int x = palavra.length();
+
+    System.out.printf("%d%n", x);
+  }
+}
