@@ -1,0 +1,15 @@
+import java.io.*;
+import java.util.*;
+
+public class HuxleyCode {
+  public static void main(String args[]) {
+    Scanner input = new Scanner(System.in);
+    
+    int horas = input.nextInt();
+    int velocidade = input.nextInt();
+    double x = velocidade;
+    double resultado = (x/12)*horas;
+    
+    System.out.printf("%.3f", resultado);
+  }
+}
