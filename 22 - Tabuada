@@ -1,0 +1,16 @@
+import java.io.*;
+import java.util.*;
+
+public class HuxleyCode {
+  public static void main(String args[]) {
+    Scanner input = new Scanner(System.in);
+
+    int x = input.nextInt();
+    int z;
+	
+	 for(int y=1;y<=9;y++){
+	    z=x*y;
+        System.out.printf("%d X %d = %d\n",x,y,z);
+    }
+  }
+}
