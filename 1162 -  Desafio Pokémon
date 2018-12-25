@@ -1,0 +1,45 @@
+import java.io.*;
+import java.util.*;
+
+public class HuxleyCode {
+  public static void main(String args[]) {
+    Scanner input = new Scanner(System.in);
+
+    String ataque = input.nextLine();
+    String defesa = input.nextLine();
+
+    if (ataque.equals("Planta")){
+      if(defesa.equals("Planta")){
+        System.out.println("Empate");
+      }
+      if(defesa.equals("Fogo")){
+        System.out.println("Desvantagem");
+      }
+      if(defesa.equals("Agua")){
+        System.out.println("Vantagem");
+      }
+    }
+    if (ataque.equals("Fogo")){
+      if(defesa.equals("Planta")){
+        System.out.println("Vantagem");
+      }
+      if(defesa.equals("Fogo")){
+        System.out.println("Empate");
+      }
+      if(defesa.equals("Agua")){
+        System.out.println("Desvantagem");
+      }
+    }
+    if (ataque.equals("Agua")){
+      if(defesa.equals("Planta")){
+        System.out.println("Desvantagem");
+      }
+      if(defesa.equals("Fogo")){
+        System.out.println("Vantagem");
+      }
+      if(defesa.equals("Agua")){
+        System.out.println("Empate");
+      }
+    }
+  }
+}
