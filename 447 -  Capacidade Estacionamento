@@ -1,0 +1,14 @@
+import java.io.*;
+import java.util.*;
+
+public class HuxleyCode {
+  public static void main(String args[]) {
+    Scanner input = new Scanner(System.in);
+    int veiculosEstacionados = input.nextInt();
+    
+    double lucroAtual = veiculosEstacionados * 1.75;
+    double lucroRestante = 73.5 - lucroAtual;
+
+    System.out.printf("%.2f%n", lucroRestante);
+  }
+}
