@@ -1,0 +1,29 @@
+import java.io.*;
+import java.util.*;
+
+public class HuxleyCode {
+  public static void main(String args[]) {
+    Scanner input = new Scanner(System.in);
+
+    int num1,num2,num3,num4;
+    int x = input.nextInt();
+
+    if(x >= 1000 && x <= 9999){
+      num1 = x / 1000;
+      num2 = x / 100 - num1 * 10;
+      num3 = x / 10 - num1 * 100 - num2 * 10;
+      num4 = x - num1 * 1000 - num2 * 100 - num3 * 10;
+
+      if(num4==0 && num3==0 && num2==0 && num1!=0)
+        System.out.printf("%d%n",num1);
+      else if(num4==0 && num3==0 && num2!=0 && num1!=0)
+        System.out.printf("%d%d%n", num2, num1);
+      else if(num4==0 && num3!=0 && num2!=0 && num1!=0)
+        System.out.printf("%d%d%d%n", num3, num2, num1);
+      else
+        System.out.printf("%d%d%d%d%n", num4 ,num3, num2, num1);
+    }
+    else
+      System.out.printf("O numero digitado não tem 4 algarismos.%n");
+  }
+}
