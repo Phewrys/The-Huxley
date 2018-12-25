@@ -1,0 +1,27 @@
+import java.io.*;
+import java.util.*;
+
+public class HuxleyCode {
+  public static void main(String args[]) {
+    Scanner input = new Scanner(System.in);
+
+    int min = input.nextInt();
+    int max = input.nextInt();
+	  int i = 1;
+    
+    while(min % 5 != 0){
+      min = min + 1;
+    }
+
+    while(min <= max && min % 5 == 0){
+      if(max - min >= 5){
+			  System.out.printf("%d|", min);
+	 		  min = min + 5;
+	    }
+	 	  else{
+	 		  System.out.printf("%d", min);
+	 		  min = min + 5;
+	    }
+    } 
+  }
+}
