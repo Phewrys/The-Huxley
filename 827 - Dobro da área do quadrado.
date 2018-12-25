@@ -1,0 +1,14 @@
+import java.io.*;
+import java.util.*;
+
+public class HuxleyCode {
+  public static void main(String args[]) {
+    Scanner input = new Scanner(System.in);
+
+    System.out.print("Informe a medida de um dos lados do quadrado:");
+    double x = input.nextDouble();
+    double areaQuad = x*x;
+
+    System.out.printf("%nResultado: %.1f%nDobro: %.1f%n", areaQuad, areaQuad*2);
+  }
+}
