@@ -1,0 +1,20 @@
+import java.io.*;
+import java.util.*;
+
+public class HuxleyCode {
+  public static void main(String args[]) {
+    Scanner input = new Scanner(System.in);
+
+    int x = input.nextInt();
+    int y = input.nextInt();
+    int l = input.nextInt();
+    int h = input.nextInt();
+    int l2 = input.nextInt();
+    int h2 = input.nextInt();
+    
+    if ((x*y) > ((l*h)+(l2*h2)))
+      System.out.println("S\n");
+    else
+      System.out.println("N\n"); 
+  }
+}
