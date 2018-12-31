@@ -1,0 +1,41 @@
+import java.io.*;
+import java.util.*;
+
+public class HuxleyCode {
+  public static void main(String args[]) {
+    Scanner input = new Scanner(System.in);
+
+    char nacionalidade = input.next().charAt(0);
+    char ocupacao = input.next().charAt(0);
+    int nArmas = input.nextInt();
+    int calibre = input.nextInt();
+    
+    if(calibre == 0){
+      System.out.println("Liberado");
+    }
+    else{
+      if(nacionalidade == 'E'){
+        if(calibre == 0)
+          System.out.println("Liberado");
+        else
+          System.out.println("Barrado");
+      }
+      if(nacionalidade == 'B'){
+        if(ocupacao == 'M')
+          System.out.println("Liberado");
+        if(ocupacao == 'T' || ocupacao == 'O'){
+          if(nArmas == 1 && calibre <= 22)
+            System.out.println("Liberado");
+          else
+            System.out.println("Barrado");
+        }
+        if(ocupacao == 'C'){
+          if(nArmas <= 2 && calibre <= 38)
+            System.out.println("Liberado");
+          else
+            System.out.println("Barrado");
+        }
+      }
+    }
+  }
+}
