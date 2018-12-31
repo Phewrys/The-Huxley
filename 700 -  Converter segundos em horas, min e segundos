@@ -1,0 +1,15 @@
+import java.io.*;
+import java.util.*;
+
+public class HuxleyCode {
+  public static void main(String args[]) {
+    Scanner input = new Scanner(System.in);
+
+    int seg = input.nextInt();
+    int h = seg / 3600;
+	int m = seg % 3600 / 60;
+	int s = seg % 3600 % 60;
+
+    System.out.printf("%d h %d m %d s\n", h, m, s);
+  }
+}
