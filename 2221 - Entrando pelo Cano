@@ -1,0 +1,70 @@
+import java.io.*;
+import java.util.*;
+
+public class HuxleyCode {
+  public static void main(String args[]) {
+    Scanner input = new Scanner(System.in);
+
+    String esquerda = input.nextLine();
+    String meio= input.nextLine();
+    String direita = input.nextLine();
+
+    String name[] = {"b", "o", "w", "s", "e", "r"};
+    // ESQUERDA
+    int resultado1 = 1;    
+    if (esquerda.indexOf("b") != -1)
+      resultado1++;
+    if (esquerda.indexOf("o") != -1)
+      resultado1++;
+    if (esquerda.indexOf("w") != -1)
+      resultado1++;
+    if (esquerda.indexOf("s") != -1)
+      resultado1++;
+    if (esquerda.indexOf("e") != -1)
+      resultado1++;
+    if (esquerda.indexOf("r") != -1)
+      resultado1++;
+
+    resultado1--;
+    if (resultado1 == 6)
+      System.out.println("Esquerda");
+
+    // MEIO
+    int resultado2 = 1;    
+    if (meio.indexOf("b") != -1)
+      resultado2++;
+    if (meio.indexOf("o") != -1)
+      resultado2++;
+    if (meio.indexOf("w") != -1)
+      resultado2++;
+    if (meio.indexOf("s") != -1)
+      resultado2++;
+    if (meio.indexOf("e") != -1)
+      resultado2++;
+    if (meio.indexOf("r") != -1)
+      resultado2++;
+
+    resultado2--;
+    if (resultado2 == 6)
+      System.out.println("Meio");
+
+    // DIREITA
+    int resultado3 = 1;    
+    if (direita.indexOf("b") != -1)
+      resultado3++;
+    if (direita.indexOf("o") != -1)
+      resultado3++;
+    if (direita.indexOf("w") != -1)
+      resultado3++;
+    if (direita.indexOf("s") != -1)
+      resultado3++;
+    if (direita.indexOf("e") != -1)
+      resultado3++;
+    if (direita.indexOf("r") != -1)
+      resultado3++;
+
+    resultado3--;
+    if (resultado3 == 6)
+      System.out.println("Direita");
+  }
+}
