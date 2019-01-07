@@ -1,0 +1,19 @@
+import java.io.*;
+import java.util.*;
+
+public class HuxleyCode {
+  public static void main(String args[]) {
+    Scanner input = new Scanner(System.in);
+
+    double x = input.nextDouble();
+    double y = input.nextDouble();
+    double z = input.nextDouble();
+
+    if(x < y && x < z)
+      System.out.println("Primeiro produto");
+    if(y < x && y < z)
+      System.out.println("Segundo produto");
+    if(z < x && z < y)
+      System.out.println("Terceiro produto");
+  }
+}
