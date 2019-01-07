@@ -1,0 +1,23 @@
+import java.io.*;
+import java.util.*;
+
+public class HuxleyCode {
+  public static void main(String args[]) {
+    Scanner input = new Scanner(System.in);
+
+    int x = input.nextInt();
+    int y = input.nextInt();
+    int z = input.nextInt();
+
+    if(x+y <= z || x+z <= y || y+z <= x)
+      System.out.println("Nao eh triangulo");
+    else{//(x+y > z || x+z > y || y+z > x)
+      if(x == y && x == z)
+        System.out.println("Equilatero");
+      else if(x != y && x != z && y != z)
+        System.out.println("Escaleno");
+      else
+        System.out.println("Isosceles");
+    }
+  }
+}
