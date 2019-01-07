@@ -1,0 +1,23 @@
+import java.io.*;
+import java.util.*;
+
+public class HuxleyCode {
+  public static void main(String args[]) {
+    Scanner input = new Scanner(System.in);
+
+    int soma = 0;
+
+    for(int i = 1; i <= 7; i++){
+      double distancia = input.nextDouble();
+      if(distancia >= 8.0)
+        soma++;
+    }
+
+    if(soma >= 5)
+      System.out.println("Desempenho otimo");
+    else if(soma == 3 || soma == 4)
+      System.out.println("Desempenho razoavel");
+    else
+      System.out.println("Desempenho ruim");
+  }
+}
