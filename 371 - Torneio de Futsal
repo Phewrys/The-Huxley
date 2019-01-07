@@ -1,0 +1,14 @@
+import java.io.*;
+import java.util.*;
+
+public class HuxleyCode {
+  public static void main(String args[]) {
+    Scanner input = new Scanner(System.in);
+
+    double premio = input.nextDouble();
+
+    System.out.printf("%.2f%n", (premio/100)*60);
+    System.out.printf("%.2f%n", (premio/100)*30);
+    System.out.printf("%.2f%n", (premio/100)*10);
+  }
+}
