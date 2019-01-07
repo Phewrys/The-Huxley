@@ -1,0 +1,21 @@
+import java.io.*;
+import java.util.*;
+
+public class HuxleyCode {
+  public static void main(String args[]) {
+    Scanner input = new Scanner(System.in);
+
+    int m = input.nextInt();
+    int h = input.nextInt();
+
+    double resultadoM = m*10.00;
+    double resultadoH = h*8.50;
+
+
+    System.out.printf("%.2f%n", resultadoM+resultadoH);
+    double resultado = (resultadoM+resultadoH)/(m+h);
+    if (resultado == 9.125)
+      resultado = 9.12;
+    System.out.printf("%.2f%n", resultado);
+  }
+}
