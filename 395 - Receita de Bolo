@@ -1,0 +1,33 @@
+import java.io.*;
+import java.util.*;
+
+public class HuxleyCode {
+  public static void main(String args[]) {
+    Scanner input = new Scanner(System.in);
+
+    int a = input.nextInt();//2
+    int b = input.nextInt();//3
+    int c = input.nextInt();//5
+
+    int nA = a / 2;
+    int nB = b / 3;
+    int nC = c / 5;
+
+    int resultado = 10000000;
+
+    if(a < 2 || b < 3 || c < 5){
+      resultado = 0;
+      System.out.printf("%d%n", resultado);
+    }
+    else{
+      if(resultado >= nA)
+        resultado = nA;
+      if(resultado >= nB)
+        resultado = nB;
+      if(resultado >= nC)
+        resultado = nC;
+      
+      System.out.printf("%d%n", resultado);
+    }
+  }
+}
