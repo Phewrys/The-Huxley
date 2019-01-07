@@ -1,0 +1,33 @@
+import java.io.*;
+import java.util.*;
+
+public class HuxleyCode {
+  public static void main(String args[]) {
+    Scanner input = new Scanner(System.in);
+
+    String sabor = input.nextLine();
+    int n = input.nextInt();
+
+    if(sabor.equalsIgnoreCase("Morango") || sabor.equalsIgnoreCase("Cereja")){
+      System.out.printf("%.2f%n", n*4.50);
+      if(n > 2)
+        System.out.println("COM CALDA");
+      else
+        System.out.println("SEM CALDA");  
+    }
+    else if(sabor.equalsIgnoreCase("Damasco") || sabor.equalsIgnoreCase("Siriguela")){
+      System.out.printf("%.2f%n", n*3.80);
+      if(n > 2)
+        System.out.println("COM CALDA");
+      else
+        System.out.println("SEM CALDA");  
+    }
+    else{
+      System.out.printf("%.2f%n", n*2.75);
+      if(n > 2)
+        System.out.println("COM CALDA");
+      else
+        System.out.println("SEM CALDA");  
+    } 
+  }
+}
