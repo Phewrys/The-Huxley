@@ -1,0 +1,27 @@
+import java.io.*;
+import java.util.*;
+
+public class HuxleyCode {
+  public static void main(String args[]) {
+    Scanner input = new Scanner(System.in);
+
+    int jogosVendidos = input.nextInt();
+    double total = jogosVendidos*19.90;
+    double x = jogosVendidos/15;
+    double bonus = (total/100)*(x*8);
+    double salario = (total/2)+bonus;
+
+    System.out.printf("%.2f%n", total);
+    if(jogosVendidos < 15){
+      bonus = 0;
+      System.out.printf("%.2f%n", bonus);
+    }
+    else{
+      System.out.printf("%.2f%n", bonus);
+    }
+    if(jogosVendidos >= 15)
+      System.out.printf("%.2f%n", salario);
+    else
+      System.out.printf("%.2f%n", total/2);
+  }
+}
