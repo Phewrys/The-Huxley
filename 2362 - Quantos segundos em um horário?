@@ -1,0 +1,18 @@
+import java.io.*;
+import java.util.*;
+
+public class HuxleyCode {
+  public static void main(String args[]) {
+    Scanner input = new Scanner(System.in);
+
+    int resultado = 0;
+    int h = input.nextInt();
+    resultado += h*60*60;
+    int m = input.nextInt();
+    resultado += m*60;
+    int s = input.nextInt();
+    resultado += s;
+
+    System.out.printf("%d%n", resultado);
+  }
+}
