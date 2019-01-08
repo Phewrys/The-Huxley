@@ -1,0 +1,14 @@
+import java.io.*;
+import java.util.*;
+
+public class HuxleyCode {
+  public static void main(String args[]) {
+    Scanner input = new Scanner(System.in);
+
+    double salario = input.nextDouble();
+    int horas = input.nextInt();
+    double cinco = (salario/100)*5;
+
+    System.out.printf("%.2f", salario+(horas*cinco)); 
+  }
+}
