@@ -1,0 +1,33 @@
+import java.io.*;
+import java.util.*;
+
+public class HuxleyCode {
+  public static void main(String args[]) {
+    Scanner input = new Scanner(System.in);
+    
+    int x = input.nextInt();
+
+    if(x == 1)
+      System.out.printf("%d", x);
+    else
+      next(x);
+  }
+  
+  public static int next (int x){
+    int y = 1;
+
+    System.out.printf("%d\n", y);
+    do{
+      y++;
+      System.out.printf("%d", y);
+
+      for(int i = 1; i < y; i++){
+        System.out.printf("-%d", y);
+      }
+      System.out.println();
+      
+    }while(y != x);
+    return x;
+  }
+  
+}
